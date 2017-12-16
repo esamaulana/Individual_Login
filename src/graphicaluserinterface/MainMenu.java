@@ -5,6 +5,8 @@
  */
 package graphicaluserinterface;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Esa
@@ -16,6 +18,7 @@ public class MainMenu extends javax.swing.JFrame {
      */
     public MainMenu() {
         initComponents();
+        setResizable(false);
     }
 
     /**
@@ -27,15 +30,18 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
         bodyPanel = new javax.swing.JPanel();
         titlePanel = new javax.swing.JPanel();
         calmTitle = new javax.swing.JButton();
         thickTitle = new javax.swing.JButton();
         hotTitle = new javax.swing.JButton();
         cinderTitle = new javax.swing.JButton();
+        aboutTitle = new javax.swing.JButton();
+        logoutTitle = new javax.swing.JButton();
         mainPanel = new javax.swing.JPanel();
         thickPanel = new javax.swing.JPanel();
-        thickPanelTitle = new javax.swing.JLabel();
+        hotPanelTitle1 = new javax.swing.JLabel();
         hotPanel = new javax.swing.JPanel();
         hotPanelTitle = new javax.swing.JLabel();
         cinderPanel = new javax.swing.JPanel();
@@ -43,7 +49,8 @@ public class MainMenu extends javax.swing.JFrame {
         calmPanel = new javax.swing.JPanel();
         calmPanelTitle = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jFormattedTextField1.setText("jFormattedTextField1");
+
         setTitle("Main Menu");
         setBackground(new java.awt.Color(0, 0, 0));
 
@@ -82,6 +89,20 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        aboutTitle.setText("about");
+        aboutTitle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aboutTitleActionPerformed(evt);
+            }
+        });
+
+        logoutTitle.setText("logout");
+        logoutTitle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutTitleActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout titlePanelLayout = new javax.swing.GroupLayout(titlePanel);
         titlePanel.setLayout(titlePanelLayout);
         titlePanelLayout.setHorizontalGroup(
@@ -90,6 +111,12 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(calmTitle)
                 .addGap(19, 19, 19))
+            .addGroup(titlePanelLayout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(aboutTitle)
+                .addGap(26, 26, 26)
+                .addComponent(logoutTitle)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(titlePanelLayout.createSequentialGroup()
                     .addGap(20, 20, 20)
@@ -110,23 +137,27 @@ public class MainMenu extends javax.swing.JFrame {
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titlePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(calmTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(calmTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(aboutTitle)
+                    .addComponent(logoutTitle))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(titlePanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(thickTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                    .addContainerGap()))
+                    .addComponent(thickTitle)
+                    .addContainerGap(40, Short.MAX_VALUE)))
             .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(titlePanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(hotTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                    .addContainerGap()))
+                    .addComponent(hotTitle)
+                    .addContainerGap(40, Short.MAX_VALUE)))
             .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(titlePanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(cinderTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                    .addContainerGap()))
+                    .addComponent(cinderTitle)
+                    .addContainerGap(40, Short.MAX_VALUE)))
         );
 
         mainPanel.setBackground(new java.awt.Color(0, 0, 0));
@@ -137,10 +168,10 @@ public class MainMenu extends javax.swing.JFrame {
         thickPanel.setBackground(new java.awt.Color(0, 0, 0));
         thickPanel.setForeground(new java.awt.Color(255, 255, 255));
 
-        thickPanelTitle.setBackground(new java.awt.Color(0, 0, 0));
-        thickPanelTitle.setFont(new java.awt.Font("Rockwell", 0, 30)); // NOI18N
-        thickPanelTitle.setForeground(new java.awt.Color(255, 255, 255));
-        thickPanelTitle.setText("Thick AF");
+        hotPanelTitle1.setBackground(new java.awt.Color(0, 0, 0));
+        hotPanelTitle1.setFont(new java.awt.Font("Rockwell", 0, 30)); // NOI18N
+        hotPanelTitle1.setForeground(new java.awt.Color(255, 255, 255));
+        hotPanelTitle1.setText("THisnk af");
 
         javax.swing.GroupLayout thickPanelLayout = new javax.swing.GroupLayout(thickPanel);
         thickPanel.setLayout(thickPanelLayout);
@@ -148,15 +179,15 @@ public class MainMenu extends javax.swing.JFrame {
             thickPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(thickPanelLayout.createSequentialGroup()
                 .addGap(115, 115, 115)
-                .addComponent(thickPanelTitle)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addComponent(hotPanelTitle1)
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         thickPanelLayout.setVerticalGroup(
             thickPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(thickPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(thickPanelTitle)
-                .addContainerGap(415, Short.MAX_VALUE))
+                .addComponent(hotPanelTitle1)
+                .addContainerGap(339, Short.MAX_VALUE))
         );
 
         mainPanel.add(thickPanel, "card2");
@@ -183,7 +214,7 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(hotPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(hotPanelTitle)
-                .addContainerGap(415, Short.MAX_VALUE))
+                .addContainerGap(339, Short.MAX_VALUE))
         );
 
         mainPanel.add(hotPanel, "card3");
@@ -210,7 +241,7 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(cinderPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(cinderPanelTitle)
-                .addContainerGap(415, Short.MAX_VALUE))
+                .addContainerGap(339, Short.MAX_VALUE))
         );
 
         mainPanel.add(cinderPanel, "card4");
@@ -221,23 +252,23 @@ public class MainMenu extends javax.swing.JFrame {
         calmPanelTitle.setBackground(new java.awt.Color(0, 0, 0));
         calmPanelTitle.setFont(new java.awt.Font("Rockwell", 0, 30)); // NOI18N
         calmPanelTitle.setForeground(new java.awt.Color(255, 255, 255));
-        calmPanelTitle.setText("Calm AF");
+        calmPanelTitle.setText("Contoh Swing");
 
         javax.swing.GroupLayout calmPanelLayout = new javax.swing.GroupLayout(calmPanel);
         calmPanel.setLayout(calmPanelLayout);
         calmPanelLayout.setHorizontalGroup(
             calmPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(calmPanelLayout.createSequentialGroup()
-                .addGap(115, 115, 115)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, calmPanelLayout.createSequentialGroup()
+                .addContainerGap(74, Short.MAX_VALUE)
                 .addComponent(calmPanelTitle)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGap(69, 69, 69))
         );
         calmPanelLayout.setVerticalGroup(
             calmPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(calmPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(6, 6, 6)
                 .addComponent(calmPanelTitle)
-                .addContainerGap(415, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
 
         mainPanel.add(calmPanel, "card5");
@@ -249,7 +280,7 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bodyPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 337, Short.MAX_VALUE)
+                    .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(titlePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -258,8 +289,8 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(bodyPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(titlePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -275,6 +306,7 @@ public class MainMenu extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void thickTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_thickTitleActionPerformed
@@ -282,11 +314,11 @@ public class MainMenu extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         mainPanel.add(thickPanel);
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
     }//GEN-LAST:event_thickTitleActionPerformed
 
     private void hotTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hotTitleActionPerformed
@@ -294,7 +326,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         mainPanel.add(hotPanel);
         mainPanel.repaint();
         mainPanel.revalidate();
@@ -305,7 +337,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         mainPanel.add(cinderPanel);
         mainPanel.repaint();
         mainPanel.revalidate();
@@ -316,11 +348,35 @@ public class MainMenu extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         mainPanel.add(calmPanel);
         mainPanel.repaint();
         mainPanel.revalidate();
     }//GEN-LAST:event_calmTitleActionPerformed
+
+    private void aboutTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutTitleActionPerformed
+        // TODO add your handling code here:
+        
+        About n = new About();
+        n.setVisible(true);
+
+    }//GEN-LAST:event_aboutTitleActionPerformed
+
+    private void logoutTitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutTitleActionPerformed
+        // TODO add your handling code here:
+        int dialogbtn = JOptionPane.YES_NO_OPTION;
+        int dialogResult = JOptionPane.showConfirmDialog(this, "yakin kaluar?", null, dialogbtn);
+
+        if (dialogResult == 0) {
+            System.exit(0);
+        } else {
+
+        }
+        
+        Login n = new Login();
+        n.setVisible(true);
+        
+    }//GEN-LAST:event_logoutTitleActionPerformed
 
     /**
      * @param args the command line arguments
@@ -358,6 +414,7 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton aboutTitle;
     private javax.swing.JPanel bodyPanel;
     private javax.swing.JPanel calmPanel;
     private javax.swing.JLabel calmPanelTitle;
@@ -367,10 +424,12 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton cinderTitle;
     private javax.swing.JPanel hotPanel;
     private javax.swing.JLabel hotPanelTitle;
+    private javax.swing.JLabel hotPanelTitle1;
     private javax.swing.JButton hotTitle;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JButton logoutTitle;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel thickPanel;
-    private javax.swing.JLabel thickPanelTitle;
     private javax.swing.JButton thickTitle;
     private javax.swing.JPanel titlePanel;
     // End of variables declaration//GEN-END:variables

@@ -16,6 +16,7 @@ public class About extends javax.swing.JFrame {
      */
     public About() {
         initComponents();
+        setResizable(false);
     }
 
     /**
@@ -28,36 +29,44 @@ public class About extends javax.swing.JFrame {
     private void initComponents() {
 
         mainPanel = new javax.swing.JPanel();
-        aboutTitle = new javax.swing.JLabel();
         FB = new javax.swing.JLabel();
         TW = new javax.swing.JLabel();
         Isi = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("About Us");
         setBackground(new java.awt.Color(0, 0, 0));
 
         mainPanel.setBackground(new java.awt.Color(0, 0, 0));
 
-        aboutTitle.setFont(new java.awt.Font("Rockwell", 0, 30)); // NOI18N
-        aboutTitle.setForeground(new java.awt.Color(255, 255, 255));
-        aboutTitle.setText("About Us");
-
-        FB.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icons8-facebook-50.png")); // NOI18N
+        FB.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-facebook-50.png")); // NOI18N
         FB.setText("jLabel2");
 
-        TW.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\twiter.png")); // NOI18N
+        TW.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\twiter.png")); // NOI18N
         TW.setText("jLabel2");
+
+        Isi.setBorder(null);
 
         jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Rockwell", 0, 13)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("--level 4 --tune psnr --preset medium --crf  \n--keyint 24 --deblock -3:-3 --subme 4 --no\n-constrained-intra --rect  --temporal-mvp\n--no-early-skip --no-lossless --b-adapt 2\n--no-cu-lossless --no-fast-intra --open-gop\n--no-tskip --no-tskip-fast \n--strong-intra-smoothing --amp --me star\n--min-cu-size 8 --rdoq-level 2 \n--tu-intra-depth 3 --tu-inter-depth 3\n--ctu 64 --merange 57 --aq-mode 2\n--rd 6 --bframes 8 --rc-lookahead 40");
+        jTextArea1.setText("10116467\nEsa Maulana\nIF 11\nUnikom\n\n\nhehe :p");
+        jTextArea1.setToolTipText("");
+        jTextArea1.setBorder(null);
         Isi.setViewportView(jTextArea1);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\profile.jpeg")); // NOI18N
+
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("About Me");
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
@@ -66,24 +75,34 @@ public class About extends javax.swing.JFrame {
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Isi, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Isi, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(TW, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FB, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(TW, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(FB, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addComponent(aboutTitle)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(81, 81, 81))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(116, 116, 116))))))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(aboutTitle)
+                .addGap(13, 13, 13)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Isi, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(11, 11, 11)
+                .addComponent(Isi, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FB, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -99,10 +118,11 @@ public class About extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -144,7 +164,8 @@ public class About extends javax.swing.JFrame {
     private javax.swing.JLabel FB;
     private javax.swing.JScrollPane Isi;
     private javax.swing.JLabel TW;
-    private javax.swing.JLabel aboutTitle;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPanel mainPanel;
     // End of variables declaration//GEN-END:variables
