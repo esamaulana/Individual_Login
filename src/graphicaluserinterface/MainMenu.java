@@ -105,7 +105,7 @@ public class MainMenu extends javax.swing.JFrame {
         titlePanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
         titlePanel.setForeground(new java.awt.Color(255, 255, 255));
 
-        contohIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-fairytale-filled-33.png")); // NOI18N
+        contohIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/3.png"))); // NOI18N
         contohIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 contohIconButtonActionPerformed(evt);
@@ -113,14 +113,14 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         homeIconButton.setBackground(new java.awt.Color(255, 255, 255));
-        homeIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-house-32.png")); // NOI18N
+        homeIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/0.png"))); // NOI18N
         homeIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homeIconButtonActionPerformed(evt);
             }
         });
 
-        swingMenusIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-fairytale-32.png")); // NOI18N
+        swingMenusIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/1.png"))); // NOI18N
         swingMenusIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 swingMenusIconButtonActionPerformed(evt);
@@ -128,21 +128,21 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         aboutIconButton.setBackground(new java.awt.Color(255, 255, 255));
-        aboutIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-about-32.png")); // NOI18N
+        aboutIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/about.png"))); // NOI18N
         aboutIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aboutIconButtonActionPerformed(evt);
             }
         });
 
-        logoutIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-logout-rounded-up-32.png")); // NOI18N
+        logoutIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/logout.png"))); // NOI18N
         logoutIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logoutIconButtonActionPerformed(evt);
             }
         });
 
-        swingContainIconButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-fairytale-filled-32.png")); // NOI18N
+        swingContainIconButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/2.png"))); // NOI18N
         swingContainIconButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 swingContainIconButtonActionPerformed(evt);
@@ -202,7 +202,7 @@ public class MainMenu extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Rockwell", 0, 13)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("Assalamualaikum semuanya, ini adalah apliaksi |\npertama saya. Tujuan dibuatnya aplikasi ini\nadalah untuk memenuhi tugas PBO.\n\nMacam Macam Swing Contros ˇ");
+        jTextArea1.setText("Assalamualaikum semuanya, ini adalah apliaksi |\npertama saya. Tujuan dibuatnya aplikasi ini\nadalah untuk memenuhi tugas PBO.\n");
         jTextArea1.setToolTipText("");
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -226,8 +226,8 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(homeLayout.createSequentialGroup()
                 .addComponent(hotPanelTitle1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(261, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         mainPanel.add(home, "card2");
@@ -549,24 +549,23 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane4)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel4)
-                                        .addComponent(jLabel5))
-                                    .addGap(43, 43, 43)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(inputNama, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                        .addComponent(inputKTP)))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(jLabel8)
-                                    .addGap(47, 47, 47)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(cKecil)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addComponent(cBesar)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                                            .addComponent(bSimpan))))))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
+                                .addGap(43, 43, 43)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(inputNama, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                                    .addComponent(inputKTP)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(47, 47, 47)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cKecil)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(cBesar)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                                        .addComponent(bSimpan)))))
                         .addContainerGap())))
         );
         jPanel3Layout.setVerticalGroup(

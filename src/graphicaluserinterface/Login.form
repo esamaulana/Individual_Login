@@ -292,21 +292,21 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Esa\Downloads\icon\profie pict black 2.jpg"/>
+              <Image iconType="3" name="/iconPack/profie pict black 2.jpg"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="usernameLogos">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Esa\Downloads\icon\user60.png"/>
+              <Image iconType="3" name="/iconPack/user60.png"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="passwordLogos">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Esa\Downloads\icon\passw.jpg"/>
+              <Image iconType="3" name="/iconPack/passw.jpg"/>
             </Property>
           </Properties>
         </Component>

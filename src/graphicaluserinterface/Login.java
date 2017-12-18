@@ -102,11 +102,11 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\profie pict black 2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/profie pict black 2.jpg"))); // NOI18N
 
-        usernameLogos.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\user60.png")); // NOI18N
+        usernameLogos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/user60.png"))); // NOI18N
 
-        passwordLogos.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\passw.jpg")); // NOI18N
+        passwordLogos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/passw.jpg"))); // NOI18N
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

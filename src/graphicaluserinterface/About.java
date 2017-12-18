@@ -35,6 +35,7 @@ public class About extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("About Us");
@@ -42,10 +43,10 @@ public class About extends javax.swing.JFrame {
 
         mainPanel.setBackground(new java.awt.Color(0, 0, 0));
 
-        FB.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\icons8-facebook-50.png")); // NOI18N
+        FB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/icons8-facebook-50.png"))); // NOI18N
         FB.setText("jLabel2");
 
-        TW.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\twiter.png")); // NOI18N
+        TW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/twiter.png"))); // NOI18N
         TW.setText("jLabel2");
 
         Isi.setBorder(null);
@@ -56,18 +57,22 @@ public class About extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("10116467\nEsa Maulana\nIF 11\nUnikom\n\n\nhehe :p");
+        jTextArea1.setText("Aplikasi daftar pengunjung Gym\n\n10116467\nEsa Maulana\nIF 11\nUnikom");
         jTextArea1.setToolTipText("");
         jTextArea1.setBorder(null);
         Isi.setViewportView(jTextArea1);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Esa\\Downloads\\icon\\profile.jpeg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconPack/profile.jpeg"))); // NOI18N
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("About Me");
+
+        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("v0.98 build 3");
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
@@ -81,6 +86,8 @@ public class About extends javax.swing.JFrame {
                             .addComponent(Isi, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TW, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(FB, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -107,7 +114,8 @@ public class About extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FB, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TW, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TW, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addContainerGap())
         );
 
@@ -167,6 +175,7 @@ public class About extends javax.swing.JFrame {
     private javax.swing.JLabel TW;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPanel mainPanel;
     // End of variables declaration//GEN-END:variables
